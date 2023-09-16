@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-oc-b0d1e": {
+      "hosting": {
+        "autiste": [
+          "fir-oc-b0d1e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "aut-up-6304b"
+  }
+}

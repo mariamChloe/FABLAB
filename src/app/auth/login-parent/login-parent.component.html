@@ -1,0 +1,25 @@
+<header>
+  <div>
+    <img src="./assets/logo_fablab.png" alt="" class="logo-fablab">
+    <img src="./assets/logo-orange 1.png" alt="logo-orange" class="logo-orange">
+  </div>
+</header>
+<main>
+  <div>
+    <form  action="get" id="login-form">
+      <h2>Bienvenue sur  <span> Aut'Up</span> </h2> <br>
+      <input type="text" name="Username" id="id" placeholder="Username" ><br>
+
+      <input [(ngModel)]="giletid" type="text" name="id" id="id" placeholder="ID Enfant" required autofocus ><br>
+      
+      <button type="submit" routerLink="/dashboar-parent" (click)="loginWithUserId()">Connexion</button>
+    </form>
+    <a routerLink="/login">Espace Medecin</a>
+  </div>
+  <div>
+    <img src="./assets/parent.png" alt="" class="logo-dashboard" style="size: 60px;">
+  </div>
+</main>
+<footer>
+  <p>Copyright © 2023 - Tous Droits Reservés</p>
+</footer>

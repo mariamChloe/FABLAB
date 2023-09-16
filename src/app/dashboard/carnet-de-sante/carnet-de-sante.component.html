@@ -1,0 +1,126 @@
+<!-- <div class="col-md-6 mb-3"><input class="form-control" type="text" placeholder="Severité de son autisme" aria-label="default input example"></div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Niveau de communication">
+      <datalist id="datalistOptions">
+        <option value="Non verbal">
+        <option value="echolalie">
+        <option value="mustisme selectif">
+        <option value="pragmatique">
+      </datalist>
+    </div> 
+    <div class="col-md-6 mb-3">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio1">F</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">M</label>
+        </div>
+    </div> 
+  
+  
+   <button type="button" class="btn btn-outline-succes" (click)="addPatient()">Inscrire</button> -->
+
+   
+        <!-- Ajoutez d'autres champs ici -->
+         <!-- <div class="col-md-6 mb-3"><input class="form-control" type="text" placeholder="Severité de son autisme" aria-label="default input example"></div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Niveau de communication">
+      <datalist id="datalistOptions">
+        <option value="Non verbal">
+        <option value="echolalie">
+        <option value="mustisme selectif">
+        <option value="pragmatique">
+      </datalist>
+    </div> 
+    <div class="col-md-6 mb-3">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio1">F</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">M</label>
+        </div>
+    </div> 
+  
+  
+   <button type="button" class="btn btn-outline-succes" (click)="addPatient()">Inscrire</button> -->
+
+   <div class="container">
+    <div class="row">
+      <h4>Antécédents Médicaux</h4>
+      <div >
+        <label for="selectedChild">Sélectionner un enfant :</label>
+        <select id="selectedChild" [(ngModel)]="selectedChildId" (change)="onChildSelected()">
+          <option value="">Sélectionner un enfant</option>
+          <option *ngFor="let child of patientList" [value]="child.id">{{ child.first_namechild }} {{ child.last_namechild }}</option>
+        </select>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="">Diagnostiqué avec:</label>
+        <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="Diagnostique">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="">Motif de la consultation</label>
+        <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="motif">
+      </div>
+    
+      <div class="col-md-6 mb-3">
+        <label for="">Conduite à tenir </label>
+        <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="conduite">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="">Etat  clinique</label>
+        <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="etat_clinique">
+      </div>
+      
+     </div>
+     <div class="row">
+      <h4></h4>
+      <label for="">Date de consultation</label>
+      <div class="col-md-6 mb-3"><input class="form-control" type="date" placeholder="date de naissance" aria-label="default input example" [(ngModel)]="date_consultation"></div>
+      <div class="form-floating" class="col-md-6 mb-3">
+        <textarea class="form-control" placeholder="laissez une observation ici " id="floatingTextarea" [(ngModel)]="observation"></textarea>
+        <label for="floatingTextarea">observation</label>
+      </div>
+      <div class="col-md-6 mb-3"><button type="button" class="btn btn-outline-succes" class="btn btn-primary" (click)="addPatient()">Enregistrez</button></div>
+  
+      <div>
+       
+        
+        <h4>Historique</h4>  
+        <br><br>
+
+        <table class="table">
+          <thead>
+            <tr class="table-primary">
+              <th scope="col">#</th>
+              <th scope="col">Nom et prénom</th>
+              <th scope="col">Date de consultation</th>
+              <th scope="col">Consultation</th>
+              <th scope="col">Conduite</th>
+              <th scope="col">Etat clinique</th>
+              <th scope="col">Diagnostique</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let patient of patientList, let i = index">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ patient.nom }} {{ patient.prenom }}</td>
+              <!-- Accédez aux données du carnet de santé de l'enfant -->
+              <td>{{ patient.Diagnostique}}</td>
+              <td>{{patient.motif }}</td>
+              <td>{{ patient.carnet.conduite}}</td>
+              <td>{{ patient.carnet.etat_clinique}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <td>{{ patientDiagnostiqueconsultation(patient, "2013-10-10")}}</td>
+              <td>{{patientmotifconsultation(patient, "2013-10-10") }}</td>
+              <td>{{ patientconduitconsultation(patient, "2013-10-10") }}</td>
+              <td>{{ patientetatconsultation(patient, "2013-10-10") }}</td> -->
+
+        <!-- <p>Diagnostiqué avec</p> <input type="text">
+        <p>Motif de la consultation </p> <input type="text">
+        <p>Conduite a tenir : </p> <input type="text"><br/>
+        <p>Etat  clinique :</p> <input type="text"> -->
+
+      </div>

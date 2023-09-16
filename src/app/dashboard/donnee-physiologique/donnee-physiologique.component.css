@@ -1,0 +1,26 @@
+input{
+    border: 2px solid #e9f2ff;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #e9f2ff;
+}
+
+.container{
+    margin-top: 45px;
+}
+
+#red-bg {
+    background-color: red;
+    color: white;
+  }
+  
+  #green-bg {
+    background-color: green;
+    color: white;
+  }
+  
+  #blue-bg {
+    background-color: blue;
+    color: white;
+  }
+  

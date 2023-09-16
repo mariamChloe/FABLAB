@@ -1,0 +1,51 @@
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Liste des patients</h2>
+    </div>
+    <div class="col-md-9">
+      <input type="text" placeholder="  Recherche..." [(ngModel)]="searchTerm">
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr class="table-primary">
+        <th scope="col">#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Enfant</th>
+        <th scope="col">geolocalisation</th>
+
+        <th scope="col" class="text-center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of filterPatients(), let i = index" [ngClass]="getColorClass(patient)">
+        <th scope="row">{{i + 1}}</th>
+        <td><!--{{ID}}--></td>
+       <td>{{patient.nom}} {{patient.prenom}}</td>
+        <td>{{patient.nom}} {{patient.prenom}}</td>
+        <td class="text-center">
+          <a routerLink="../carnet-de-sante" type="button" class="btn btn-primary"><i class="fa-solid fa-staff-snake"
+              style="color: white;"></i></a> &nbsp;
+         <!--- <a routerLink="../donnee-physiologique" type="button" class="btn btn-primary"><i class="fa-solid fa-book" style="color: white;"></i></a>&nbsp;
+          <a routerLink="../geolocalisation" type="button" class="btn btn-primary"><i class="fa-solid fa-location-dot" style="color: white;"></i></a>
+          -->
+          <a routerLink="/patient-details" type="button" class="btn btn-primary">
+            <i class="fa-solid fa-staff-snake" style="color: white;"></i> Voir les détails
+          </a>
+      
+        </td>
+    
+
+
+     
+      </tr> 
+    </tbody>
+   
+      
+  
+  </table>
+   </div>

@@ -1,0 +1,12 @@
+{
+  "hosting": [
+    {
+      "target": "autiste",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ],
+  "database": {
+    "rules": "y"
+  }
+}

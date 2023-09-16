@@ -1,0 +1,28 @@
+<main class="main">
+    <div class="sidebar">
+        <h2>Aut'Up</h2>
+        <ul>
+            <li ><a routerLink="accueil" routerLinkActive="active-link"><i class="fa-solid fa-house fa-xl" style="color: #347bd8;" ></i> Tableau de bord</a></li>
+            <li ><a routerLink="inscription" routerLinkActive="active-link"><i class="fa-solid fa-add fa-xl"style="color: #347bd8;"></i>Inscription</a></li>
+            <li ><a routerLink="patients" routerLinkActive="active-link"><i class="fa-solid fa-users fa-xl"style="color: #347bd8;"></i>Les patients</a></li>
+
+            <button  (click)="logout()">Déconnexion</button>
+        </ul>
+    </div>  
+
+    
+   
+    <div class="content">
+        <div class="header">
+            <button><i class="fa-solid fa-bars fa-2xl"></i></button>
+            <div>
+                <span> </span>
+                <span class="circle" ></span>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</main>

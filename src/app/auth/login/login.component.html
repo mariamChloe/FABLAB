@@ -1,0 +1,24 @@
+<body>
+  <header>
+    <div>
+      <img src="./assets/fablogo.png" alt="" class="fablogo">
+      <img src="./assets/logo-orange 1.png" alt="logo-orange" class="logo-orange">
+    </div>
+  </header>
+  <main>
+    <div>
+      <form action="get" id="login-form">
+        <h2>Bienvenue sur  <span> Aut'Up</span> </h2> <br>
+        <input type="email" name="email" id="email" placeholder="  E-mail" required autofocus  [(ngModel)]="email" ><br> <br>
+        <input type="password" name="password" id="password" placeholder="    Mot de passe" required [(ngModel)]="password"><br>
+        <button type="submit"routerLink="/dashboard">Connexion</button>
+      </form>
+    </div>
+    <div>
+      <img src="./assets/logo_dashboard.png" alt="" class="logo-dashboard">
+    </div>
+  </main>
+  <footer>
+    <p>Copyright © 2023 - Tous Droits Reservés</p>
+  </footer>
+</body>

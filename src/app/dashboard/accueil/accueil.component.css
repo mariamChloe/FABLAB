@@ -1,0 +1,174 @@
+/*.main-square{
+    /* display: flex;
+    justify-content: center; */
+    /* margin-top: 40px; */
+/*}*/
+
+.container {
+  margin-top: 20px;
+}
+
+.square-content{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row;
+    gap: 5rem; */
+    border: #dfeafc 1px solid;
+    background-color: #f8f8fa;
+    padding: 25px;
+    background-color: #ffffff;
+
+   
+}
+
+.square {
+    width: 32%;
+    height: 7em;
+    border: 1px solid #ECECEC;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 5px 12px 0px #ECECEC;
+}
+  
+.top, .bottom {
+    display: flex;
+    align-items: center;
+}
+  
+.top {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+    flex: 1;
+    padding: 5px;
+}
+  
+.bottom {
+    flex: 2;
+    padding: 5px;
+}
+  
+h5 {
+    margin: 0px 2px 0px 10px;
+}
+
+/* input{
+    background-color: #e9f2ff;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+  .l1{
+    background-color: #509CEA;
+}
+
+.tableau-generale{
+    display: flex;
+    justify-content: center;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.bottom-table {
+    padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 48rem;
+  margin: 4rem 10rem 0rem 0rem ;
+}
+
+table, th, td {
+  border: 1px solid #dfeafc;
+}
+
+th, td {
+  padding: 8px;
+  width: 20px;
+} */
+
+input{
+    background-color: #e9f2ff;
+    height: 40px;
+    border: solid 1px white;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .l1{
+    background-color: #509CEA;
+  }
+  
+  .tableau-generale{
+      display: flex;
+      justify-content: center;
+  }
+  .search-container {
+      display: flex;
+      justify-content: space-between;
+  }
+    
+  .bottom-table {
+      padding: 5px;
+  }
+  
+  /* table {
+    border-collapse: collapse;
+    width: 55rem;
+    margin: 4rem 1rem 0rem 0rem ;
+  } */
+  
+  table, th, td {
+    border: 1px  solid #ECECEC;
+  }
+  
+  th, td {
+    padding: 8px;
+    width: 20px;
+  }
+  
+  .legende {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 188px;
+    margin-right: 28px;
+  }
+  
+  .light {
+    display: flex;
+    align-items: center;
+  }
+
+  .with-icon {
+    padding-right: 300px; /* Ajustez la valeur selon vos besoins */
+  }
+  .text-green {
+    color: rgb(36, 223, 36);
+}
+
+.text-yellow {
+  color: rgb(232, 236, 17);
+}
+
+.text-orange {
+  color: rgb(236, 152, 17);
+}
+
+.square1 {
+  width: 32%;
+  height: 7em;
+  border: 3px solid #71a5e5;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 12px 0px #f8f8f8;
+}
+
+
+  
+ 
+  

@@ -1,0 +1,77 @@
+<div class="container">
+
+  <div class="row">
+    <h4>Informations parents</h4>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" type="text" placeholder="Nom et Prénom père" aria-label="default input example" [(ngModel)]="first_name">
+    </div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" type="text" placeholder="Nom et prénom de la mère" aria-label="default input example" [(ngModel)]="last_name">
+    </div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" type="text" placeholder="contact" aria-label="default input example" [(ngModel)]="conctact1">
+    </div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" type="text" placeholder="id gilet" aria-label="default input example" [(ngModel)]="giletid" >
+    </div>
+   </div><br>
+   <div class="row">
+    <h4>Informations Enfants</h4><br><br>
+    <div class="col-md-6 mb-3">
+      <label for="">Nom</label>
+      <input class="form-control" type="text" placeholder="Nom" aria-label="default input example" [(ngModel)]="first_namechild">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">prenom</label>
+      <input class="form-control" type="text" placeholder="Prénom" aria-label="default input example" [(ngModel)]="last_namechild">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Localité</label>
+      <input class="form-control" type="text" placeholder="localité" aria-label="default input example" [(ngModel)]="localite" >
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Date de naissance</label>
+      <input class="form-control" type="date" placeholder="date de naissance" aria-label="default input example"[(ngModel)]="birthday">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Niveau de communication</label>
+      <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="communication" >
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Severité de son autisme</label>
+      <input class="form-control" type="text"  aria-label="default input example" [(ngModel)]="severite" >
+    </div>
+
+    
+   <div class="col-md-6 mb-3"><button type="button" class="btn btn-outline-succes" class="btn btn-primary" (click)="addPatient()">Inscrire</button></div>
+
+
+    <div class="row">
+      
+    </div>
+    <!-- <div class="col-md-6 mb-3"><input class="form-control" type="text" placeholder="Severité de son autisme" aria-label="default input example"[(ngModel)]=""></div>
+    <div class="col-md-6 mb-3">
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Niveau de communication">
+      <datalist id="datalistOptions">
+        <option value="Non verbal">
+        <option value="echolalie">
+        <option value="mustisme selectif">
+        <option value="pragmatique">
+      </datalist>
+    </div> -->
+    <!-- <div class="col-md-6 mb-3">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" [(ngModel)]="last_name">
+        <label class="btn btn-outline-primary" for="btnradio1">F</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" [(ngModel)]="last_name">
+        <label class="btn btn-outline-primary" for="btnradio2">M</label>
+        </div>
+    </div> -->
+   <!-- <div class="row">
+    <h4>Informations Parent-accompagnant</h4>
+    <div class="col-md-6 mb-3"><input class="form-control" type="text" placeholder="Nom" aria-label="default input example" [(ngModel)]="first_namechild"></div>
+    <div class="col-md-6 mb-3"><input class="form-control" type="text" placeholder="prenom" aria-label="default input example" [(ngModel)]="last_namechild"></div>
+    <div class="col-md-6 mb-3"><input class="form-control" type="tel" placeholder="Numéro d'urgence" aria-label="default input example"[(ngModel)]="contact"></div>
+   </div> -->
+  
+</div>
