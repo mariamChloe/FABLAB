@@ -5,24 +5,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './histogram-charts.component.html',
   styleUrls: ['./histogram-charts.component.css']
 })
-export class HistogramChartsComponent implements OnInit {
+export class HistogramChartsComponent  {
 
-
-  public barChartOptions: any = {
-    scaleShowVerticalLines: false,
-    responsive: true
+  constructor () {
+  const data = {
+    labels: [
+      'Red',
+      'Blue',
+      'Yellow'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
   };
-  public barChartLabels: string[] = ['Catégorie 1', 'Catégorie 2', 'Catégorie 3'];
-  public barChartType: string = 'bar';
-  public barChartLegend: boolean = true;
-
-  public barChartData: any[] = [
-    { data: [12, 19, 3], label: 'Exemple d\'histogramme' }
-  ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+}
 
 }

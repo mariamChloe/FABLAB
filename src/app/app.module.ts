@@ -7,6 +7,9 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { NgChartsModule } from 'ng2-charts';
+
+
 
 
 
@@ -36,6 +39,8 @@ import { PatientDetailsComponent } from './patient-details/patient-details.compo
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
+    NgChartsModule,
+  
 
     BrowserAnimationsModule
   ],

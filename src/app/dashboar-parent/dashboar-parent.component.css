@@ -88,8 +88,12 @@ ul{
 
 /* dashboard-parent.component.css */
 
-.text-green {
-    color: rgb(36, 223, 36);
+.text-red {
+    color: rgb(209, 13, 13);
+}
+
+.text-green{
+    color: #38dc13;
 }
 
 .text-yellow {

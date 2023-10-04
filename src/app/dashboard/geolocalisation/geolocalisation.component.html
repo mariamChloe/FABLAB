@@ -11,7 +11,7 @@
     <div class="col-md-8">
 
  <div  class="row"style="display: flex; justify-content: center;">
-    <div #mapContainer id="map"class="content"style="width:55%; height:80%; position: absolute; top: 2; bottom: 0;"> </div>
+    <div #mapContainer id="map"class="content"style="width:55%; height:80%; position: absolute; top: 50; bottom: 12;"> </div>
     </div>
 
     <script>
@@ -20,13 +20,13 @@
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
 style: 'mapbox://styles/mapbox/streets-v12',
-center: [-4.0187478065,5.3389563560],
-zoom: 8
+center: [-3.9682092667,5.3324518204],
+zoom: 2
 });
 
 // Create a default Marker and add it to the map.
 const marker1 = new mapboxgl.Marker()
-.setLngLat([-4.0187478065,5.3389563560])
+.setLngLat([-3.9682092667,5.3324518204])
 .addTo(map);  
     </script> 
    </div>

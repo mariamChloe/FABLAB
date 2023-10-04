@@ -8,6 +8,13 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { NgModule } from '@angular/core';
 import {ChartData} from 'chart.js';
 import 'chart.js';
+import {  ChartOptions } from 'chart.js';
+import { Color } from 'chart.js';
+
+
+
+
+
 
 
 
@@ -26,6 +33,7 @@ import 'chart.js';
 })
 export class AccueilComponent {
 
+  
   
 
 
@@ -100,7 +108,10 @@ export class AccueilComponent {
   public detailPatient:any;
  
  
-  constructor(private router: Router ,private auth : AuthService, private data : DataService) { }
+  constructor(private router: Router ,private auth : AuthService, private data : DataService) {
+
+    
+   }
 
   ngOnInit(): void {
     this.getAllPatients();
